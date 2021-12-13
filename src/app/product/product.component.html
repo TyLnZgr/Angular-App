@@ -1,15 +1,3 @@
-<div class="row">
-  <div
-    class="col-3 mt-5"
-    *ngFor="
-      let product of products
-        | paginate: { itemsPerPage: 10, currentPage: page }
-    "
-  >
-    <app-product-list [product]="product"></app-product-list>
-  </div>
-  <pagination-controls
-    (pageChange)="page = $event"
-    class="text-center mt-5"
-  ></pagination-controls>
+<div class="container">
+  <app-products-list></app-products-list>
 </div>

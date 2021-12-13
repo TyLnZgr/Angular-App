@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="card shadow-sm card-width-height">
+      <img
+        [src]="product.imgPath"
+        class="card-img-top bg-light p-2 cursor"
+        alt="Product-İmage"
+      />
+      <div class="card-body">
+        <h5 class="card-title bg-light bg-gradient fs-4">
+          {{ product.title }}
+        </h5>
+        <p class="card-text">
+          {{ product.description }}
+        </p>
+        <p class="card-text">{{ product.price }} TL</p>
+        <a class="btn btn-outline-secondary">Sepete Ekle</a>
+      </div>
+    </div>
+  </div>
+</div>
